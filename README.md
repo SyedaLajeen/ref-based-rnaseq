@@ -1,14 +1,5 @@
 # Reference-Based RNA-Seq Data Analysis — Galaxy
 
-**Organism:** *Drosophila melanogaster*  
-**Experiment:** *pasilla* gene knockdown (RNAi) vs untreated — differential gene expression  
-**Samples:** GSM461177 (untreated, paired-end) vs GSM461180 (treated, paired-end)  
-**Platform:** [Galaxy Europe](https://usegalaxy.eu)  
-**Tutorial:** [GTN — Reference-based RNA-Seq data analysis](https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html)  
-**Raw Data DOI:** [10.5281/zenodo.1185122](https://doi.org/10.5281/zenodo.1185122)
-
----
-
 ## Biological Background
 
 This project reproduces the analysis from Brooks et al. (2011), which investigated
