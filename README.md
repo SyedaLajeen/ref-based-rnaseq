@@ -43,44 +43,29 @@ Available from Galaxy Shared Data Library:
 
 ## Analysis Pipeline
 Raw FASTQ Reads (GSM461177 + GSM461180)
-│
-▼
+
 ┌─────────────────────┐
 │  Step 1: QC         │  Falco + MultiQC
 └─────────────────────┘
-│
-▼
 ┌─────────────────────┐
 │  Step 2: Trimming   │  Cutadapt + MultiQC
 └─────────────────────┘
-│
-▼
 ┌─────────────────────┐
 │  Step 3: Mapping    │  RNA STAR (dm6) + MultiQC
 └─────────────────────┘
-│
-▼
 ┌─────────────────────┐
 │  Step 4: Post-map   │  RSeQC + Samtools idxstats + MultiQC
 │         QC          │
 └─────────────────────┘
-│
-▼
 ┌─────────────────────┐
 │  Step 5: Counting   │  featureCounts
 └─────────────────────┘
-│
-▼
 ┌─────────────────────┐
 │  Step 6: DESeq2     │  Differential Expression Analysis
 └─────────────────────┘
-│
-▼
 ┌─────────────────────┐
 │  Step 7: Visualize  │  Heatmap2 + Volcano Plot
 └─────────────────────┘
-│
-▼
 ┌─────────────────────┐
 │  Step 8: Enrichment │  goseq (GO) + Pathview (KEGG)
 └─────────────────────┘
