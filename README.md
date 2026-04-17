@@ -161,46 +161,6 @@ Raw FASTQ Reads (GSM461177 + GSM461180)
 - Pathview maps DE genes onto KEGG pathway diagrams
 
 ---
-
-## Repository Structure
-galaxy-ref-based-rnaseq/
-│
-├── README.md
-│
-├── data/
-│   ├── raw_reads/              ← FASTQ files not committed (see Zenodo URLs above)
-│   └── annotation/             ← GTF file not committed (see Zenodo)
-│
-└── results/
-│
-├── 01_fastqc/
-│   └── multiqc_fastqc_falco_report/     ← MultiQC HTML + data (Falco QC)
-│
-├── 02_trimming/
-│   └── multiqc_cutadapt_report/         ← MultiQC HTML + data (Cutadapt)
-│
-├── 03_mapping/
-│   ├── multiqc_star_mapping_report/     ← MultiQC HTML + data (STAR)
-│   └── multiqc_rseqc_report/            ← MultiQC HTML + data (RSeQC)
-│
-├── 04_featurecounts/
-│   └── featureCounts_all_samples/       ← Count tables per sample
-│
-├── 05_deseq2/
-│   ├── DESeq2_results_treated_vs_untreated.tabular
-│   ├── DESeq2_annotated_results.tabular
-│   └── DESeq2_plots_PCA_MA_dispersion.pdf
-│
-├── 06_visualization/
-│   ├── heatmap2_top130_DE_genes.pdf
-│   ├── heatmap2_top130_DE_genes_v2.pdf
-│   └── KEGG_pathview_pathways/          ← KEGG pathway diagrams
-│
-└── 07_goseq/
-└── goseq_top_DE_genes.pdf           ← GO enrichment results
-
----
-
 ## How to Reproduce This Analysis
 
 1. Go to [usegalaxy.eu](https://usegalaxy.eu) and log in (create account if needed)
